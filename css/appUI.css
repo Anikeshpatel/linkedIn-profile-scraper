@@ -49,7 +49,7 @@
     margin-top: 1rem;
     -webkit-transition: .3s;
     transition: .3s;
-    background-color: #8881f1;
+    background-color: #0073b1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -73,24 +73,12 @@
 }
 
 .fas {
-    color: white;
+    color: white !important;
     font-size: 1rem;
 }
 
-.input::-webkit-input-placeholder {
-    color: #bfbbf7;
-}
-
-.input:-ms-input-placeholder {
-    color: #bfbbf7;
-}
-
-.input::-ms-input-placeholder {
-    color: #bfbbf7;
-}
-
 .input::placeholder {
-    color: #bfbbf7;
+    color: #dddddd !important;
 }
 
 .hover {
@@ -108,7 +96,7 @@
     display: inline-block;
     text-decoration: none;
     border-radius: 1rem;
-    background-color: #05c9f9;
+    background-color: #0073b1;
     opacity: .5;
     padding: 1rem 1.5rem;
     color: white;
