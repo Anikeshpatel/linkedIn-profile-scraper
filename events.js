@@ -6,3 +6,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendMessage) => {
         })
     }
 })
+
+chrome.browserAction.onClicked.addListener((tab) => {
+	chrome.tabs.sendMessage(tab.id, {action: 'open'})
+})

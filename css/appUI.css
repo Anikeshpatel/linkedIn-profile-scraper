@@ -1,0 +1,249 @@
+.appCard {
+    height: 200px;
+    width: 100%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 62.5%;
+    position: relative;
+    font-family: sans-serif;
+    margin: .8rem 0;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    color: #2c2c2c;
+    letter-spacing: .1rem;
+    font-family: inherit;
+}
+
+.main__container {
+    width: 95%;
+    height: 95%;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 2rem;
+    padding: 2rem;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: center;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.input__container {
+    margin-top: 1rem;
+    -webkit-transition: .3s;
+    transition: .3s;
+    background-color: #8881f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+}
+
+.input,
+.input:active {
+    background-color: transparent !important;
+    outline: none !important;
+    border: none !important;
+    padding: .5rem 1rem !important;
+    color: white !important;
+    font-size: 1.5rem !important;
+    -webkit-transition: .3s !important;
+    transition: .3s !important;
+    flex: 1 !important;
+    box-shadow: none !important;
+    border-color: transparent !important;
+}
+
+.fas {
+    color: white;
+    font-size: 1rem;
+}
+
+.input::-webkit-input-placeholder {
+    color: #bfbbf7;
+}
+
+.input:-ms-input-placeholder {
+    color: #bfbbf7;
+}
+
+.input::-ms-input-placeholder {
+    color: #bfbbf7;
+}
+
+.input::placeholder {
+    color: #bfbbf7;
+}
+
+.hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.label {
+    font-size: .8rem;
+    margin-top: .5rem;
+    background-color: transparent !important;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 1rem;
+    background-color: #05c9f9;
+    opacity: .5;
+    padding: 1rem 1.5rem;
+    color: white;
+    font-size: 1.2rem;
+    -webkit-transition: .3s;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    letter-spacing: .2rem;
+    border-radius: 2rem;
+}
+
+.invalid {
+    background-color: orangered !important;
+}
+
+.currect {
+    background-color: #05c9f9 !important;
+}
+
+
+
+#modalContainer {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    z-index: 10000;
+    background-image: url(tp.png);
+    user-select: none;
+}
+
+#alertBox {
+    position: relative;
+    width: 33%;
+    min-height: 100px;
+    max-height: 400px;
+    margin-top: 50px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    top: 30%;
+}
+
+#modalContainer>#alertBox {
+    position: fixed;
+}
+
+#alertBox h1 {
+    margin: 0;
+    font: bold 1em Raleway, arial;
+    background-color: #283e4a;
+    color: #FFF;
+    border-bottom: 1px solid #283e4a;
+    padding: 10px 0 10px 5px;
+}
+
+#alertBox p {
+    height: 50px;
+    padding-left: 5px;
+    padding-top: 30px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#alertBox #closeBtn {
+    display: block;
+    position: relative;
+    margin: 10px auto 10px auto;
+    padding: 7px;
+    border: 0 none;
+    width: 70px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFF;
+    background-color: #283e4a;
+    border-radius: 0px;
+    text-decoration: none;
+    outline: 0 !important;
+}
+
+
+#mContainer {
+    position: relative;
+    width: 600px;
+    margin: auto;
+    padding: 5px;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+h1,
+h2 {
+    margin: 0;
+    padding: 4px;
+}
+
+code {
+    font-size: 1.2em;
+    color: #069;
+}
+
+#credits {
+    position: relative;
+    margin: 25px auto 0px auto;
+    width: 350px;
+    font: 0.7em verdana;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    height: 90px;
+    padding-top: 4px;
+}
+
+#credits img {
+    float: left;
+    margin: 5px 10px 5px 0px;
+    border: 1px solid #000000;
+    width: 80px;
+    height: 79px;
+}
+
+.important {
+    background-color: #F5FCC8;
+    padding: 2px;
+
+}
+
+@media (max-width: 600px) {
+    #alertBox {
+        position: relative;
+        width: 90%;
+        top: 30%;
+    }
+}

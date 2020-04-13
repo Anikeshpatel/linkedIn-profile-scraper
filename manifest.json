@@ -10,11 +10,7 @@
         "128": "icons/128x128.png"
     },
 
-    "page_action": {
-        "default_popup": "popup.html",
-        "default_title": "LinkedIn Profile Scraper",
-        "default_icon": "icons/48x48.png"
-    },
+    "browser_action": {},
 
     "background": {    
         "scripts": ["events.js"],    
@@ -25,7 +21,7 @@
         {
             "matches": ["*://*.linkedin.com/*"],
             "js": ["profileScraper.js"],
-            "css" : ["css/spinner.css"]
+            "css" : ["css/spinner.css", "css/appUI.css"]
         }
     ],
 
